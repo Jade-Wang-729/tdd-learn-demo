@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: tdd_learn_postgres
+    environment:
+      POSTGRES_DB: cardpostgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - '5432:5432'

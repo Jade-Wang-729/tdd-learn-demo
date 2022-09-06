@@ -6,6 +6,14 @@ server:
 spring:
   application:
     name: tdd-card-user
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    driverClassName: org.postgresql.Driver
+    username: postgres
+    password: password
 
 management:
   endpoint:
@@ -20,5 +28,6 @@ management:
       application: ${spring.application.name}
 
 logging:
-  level.root: info
+#  level.root: info
   log-to-console: true
+
