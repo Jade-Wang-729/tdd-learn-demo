@@ -1,0 +1,15 @@
+#api:
+#  disable-mandatory-header-checking: true
+#spring:
+#  datasource:
+#    url: jdbc:tc:postgresql:9.6.8:///postgres
+#    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+#    username: postgres
+#    password: password
+#
+#  //        registry.add("spring.datasource.url",
+#  //                () -> String.format("jdbc:tc:postgresql:9.6.12://localhost:5432/postgres"));
+#  //        registry.add("spring.datasource.username", () -> "postgres");
+#  //        registry.add("spring.datasource.password", () -> "password");
+
+
